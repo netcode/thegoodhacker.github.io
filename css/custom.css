@@ -1,0 +1,28 @@
+.row{
+    clear: both;
+}
+.row .col-left{
+    float:left; 
+    width: 46%;
+    margin-top: 20px;
+    margin-right:2%; 
+    padding-right:2%;
+    border-right:1px solid #000000
+}
+.row .col-right{
+    float:left; 
+    width: 46%;
+    margin-top: 20px;
+    margin-right:2%; 
+    padding-left:2%
+}
+/* Media queries */
+@media screen and (max-width: 45em) {
+    .row .col-right, .row .col-left{
+        float: none;
+        width: 94%;
+    }
+    .row .col-left{
+        border: 0;
+    }
+}
